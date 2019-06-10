@@ -28,7 +28,7 @@ for i = 1:s(1,2)
         IntensityArray{dapicount,3} = str;
         DapiImage = imread(char(str));
         imgrayDAPI = rgb2gray(DapiImage);
-        [outputImage, number_of_nuclei] = nuclei_countOptFinCheck(imgrayDAPI, 0);%should point to the appropriate estimation
+        [outputImage, number_of_nuclei] = nuclei_countOpt40x(imgrayDAPI, 0);%should point to the appropriate estimation
         %script for the field of view collected for your gene of interest
         f = struct2cell(number_of_nuclei)
         nucVal = string(f(3));
