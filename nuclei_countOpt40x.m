@@ -1,4 +1,4 @@
-function [outputImage, number_of_nuclei] = nuclei_counter(sourceImage, threshold)
+function [outputImage, number_of_nuclei] = nuclei_countOpt40x(sourceImage, threshold)
 
 
 image = sourceImage;
